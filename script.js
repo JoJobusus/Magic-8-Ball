@@ -35,11 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
             return;
         }
 
-        if (!questionText.includes("?")) {
-            alert("Будь ласка, введіть питання!");
-            return;
-        }
-
         const randomAnswer = answers[Math.floor(Math.random() * answers.length)];
         response.textContent = randomAnswer;
         response.classList.add('fade-in');
